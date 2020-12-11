@@ -19,12 +19,12 @@
 					$user=$_SESSION['admin'];
 					echo '
 				<li class="nav-item"><a href="" class="nav-link text-white">'.$user.'</a></li>
-				<li class="nav-item"><a href="main.php" class="nav-link text-white">LOGOUT</a></li>
+				<li class="nav-item"><a href="logout.php" class="nav-link text-white">LOGOUT</a></li>
 					';
 				}else if(isset($_SESSION['doctor'])){
 					$user=$_SESSION['doctor'];
 					echo '<li class="nav-item"><a href="" class="nav-link text-white">'.$user.'</a></li>
-				<li class="nav-item"><a href="main.php" class="nav-link text-white">LOGOUT</a></li>
+				<li class="nav-item"><a href="logout1.php" class="nav-link text-white">LOGOUT</a></li>
 					';
 
 				}

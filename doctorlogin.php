@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include("connection.php");
 
 
@@ -33,6 +35,7 @@ if(isset($_POST['login'])){
 		if(mysqli_num_rows($res)){
 			echo "<script>alert('Done')</script>";
 			$_SESSION['doctor']=$username;
+			header("Location:doctor_index.php");
 			//header("Location: ")
 		}else{
 			echo "<script>alert('Failed')</script>";
