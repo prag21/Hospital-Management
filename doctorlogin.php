@@ -17,13 +17,13 @@ if(isset($_POST['login'])){
    $row=mysqli_fetch_array($qq);
 
 	if(empty($username)){
-		$error['login']="Enter Username";
+		$error['doctor']="Enter Username";
 	}else if(empty($password)){
-		$error['login']="Enter Password";
+		$error['doctor']="Enter Password";
 	}else if($row['status']=="Pending"){
-		$error['login']="Please wait for the admin to confirm";
+		$error['doctor']="Please wait for the admin to confirm";
 	}else if ($row['status']=="Rejected") {
-		$error['login']="Try again later";
+		$error['doctor']="Try again later";
 		# code...
 	}
 
@@ -32,7 +32,7 @@ if(isset($_POST['login'])){
 		$res=mysqli_query($connect,$query);
 
 
-		if(mysqli_num_rows($res)){
+		if(mysqli_num_rows($res)==1){
 			echo "<script>alert('Done')</script>";
 			$_SESSION['doctor']=$username;
 			header("Location:doctor_index.php");
@@ -70,10 +70,15 @@ if(isset($error['login'])){
 						DOCTORS LOGIN</h5>
 						<div>
 							<?php
-
-
-                               echo $show;
-							?>
+						if(isset($error['doctor'])){
+							$sh  =$error['doctor'];
+							$show="<h4 class='alert alert-danger'>$sh</h4>";
+						}
+						else{
+							$show="";
+						}
+						echo $show;
+						?>
 						</div>
 						<form method="post" class="my-2">
 							<div class="form-group">

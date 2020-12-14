@@ -5,11 +5,11 @@
 </head>
 <body>
 	<div class="list-group bg-info" style="height: 90vh;">
-						<a href="index.php" class="list-group-item list-group-item-action bg-info text-center text-white ">DASHBOARD</a>
-						<a href="profile.php" class="list-group-item list-group-item-action bg-info text-center text-white ">PROFILE</a>
-						<a href="admin.php" class="list-group-item list-group-item-action bg-info text-center text-white ">PATIENT</a>
-						<a href="doctor.php" class="list-group-item list-group-item-action bg-info text-center text-white ">APPOINTMENT</a>
-						<a href="" class="list-group-item list-group-item-action bg-info text-center text-white ">REPORT</a>
+						<a href="doctor_index.php" class="list-group-item list-group-item-action bg-info text-center text-white ">DASHBOARD</a>
+						<a href="profile_doctor.php" class="list-group-item list-group-item-action bg-info text-center text-white ">PROFILE</a>
+						<a href="doctor_patient.php" class="list-group-item list-group-item-action bg-info text-center text-white ">PATIENT</a>
+						<a href="doctor_appointment.php" class="list-group-item list-group-item-action bg-info text-center text-white ">APPOINTMENT</a>
+						<a href="doctor_report.php" class="list-group-item list-group-item-action bg-info text-center text-white ">REPORT</a>
 					</div>
 
 </body>

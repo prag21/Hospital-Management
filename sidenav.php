@@ -9,7 +9,7 @@
 						<a href="profile.php" class="list-group-item list-group-item-action bg-info text-center text-white ">PROFILE</a>
 						<a href="admin.php" class="list-group-item list-group-item-action bg-info text-center text-white ">ADMINISTRATORS</a>
 						<a href="doctor.php" class="list-group-item list-group-item-action bg-info text-center text-white ">DOCTORS</a>
-						<a href="" class="list-group-item list-group-item-action bg-info text-center text-white ">PATIENT</a>
+						<a href="patient.php" class="list-group-item list-group-item-action bg-info text-center text-white ">PATIENT</a>
 					</div>
 
 </body>

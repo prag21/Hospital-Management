@@ -28,6 +28,13 @@
 					';
 
 				}
+				else if(isset($_SESSION['patient'])){
+					$user=$_SESSION['patient'];
+					echo '<li class="nav-item"><a href="" class="nav-link text-white">'.$user.'</a></li>
+				<li class="nav-item"><a href="patient_logout.php" class="nav-link text-white">LOGOUT</a></li>
+					';
+
+				}
 
 				else
 				{ 
@@ -36,7 +43,7 @@
 				<li class="nav-item"><a href="main.php" class="nav-link text-white ">HOME</a></li>
 				<li class="nav-item"><a href="admin_login.php" class="nav-link text-white ">ADMIN</a></li>
 				<li class="nav-item"><a href="doctorlogin.php" class="nav-link text-white">DOCTOR</a></li>
-				<li class="nav-item"><a href="" class="nav-link text-white">PATIENT</a></li>';
+				<li class="nav-item"><a href="patientlogin.php" class="nav-link text-white">PATIENT</a></li>';
 			}
 			?>
 	</nav>
